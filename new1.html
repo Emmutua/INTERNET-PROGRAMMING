@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- give the mata data= the description -->
+        <title>Responsive design</title>
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .left{
+                background-color: rgb(13, 82, 128);
+                padding: 20px;
+                float: left;
+                width: 20%;
+            }
+            .main{
+                background-color: aliceblue;
+                padding: 20px;
+                float: left;
+                width: 60%;
+            }
+            .right{
+                background-color: rgb(36, 146, 104);
+                float: left;
+                width: 20%;
+                padding: 20px;
+            }
+            /* use of media querry to add a break point at 800px */
+            @media screen and (max-width: 800px) {
+                .left, .main, .right{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Media Querries</h2>
+
+        <p>Resize the browser window</p>
+        <p>Make sure that you reach the breakpoint that is at 800px while resizing the frame </p>
+        <div class="left">
+            <p>Left Menu</p>
+        </div>
+        <div class="main">
+            <p>Main content</p>
+        </div>
+        <div class="right">
+            <p>Right content</p>
+        </div>
+    </body>
+</html>
